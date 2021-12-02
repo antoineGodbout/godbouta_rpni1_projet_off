@@ -1,0 +1,39 @@
+/**
+* @author Antoine Godbout
+*/
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  &__item {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-right: 2em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__couleur {
+    padding-top: 70%;
+    &--bleuFonce {
+        background-color: $bleufonce;
+    }
+    &--blancBleu {
+        background-color: $blancBleu;
+    }
+    &--jaune {
+      background-color: $jaune;
+    }
+    &--bleuNeptune {
+      background-color: $neptune;
+    }
+  }
+  &__details {
+    font-size: 0.75em;
+  }
+}

@@ -1,0 +1,63 @@
+/**
+* @author Antoine Godbout
+*/
+/* Importation des typos */
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/Fira_Sans/FiraSans-Regular.ttf);
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url(../fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf);
+}
+/**** Typographie responsive ****/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fonteFira;
+  @include fontSize(16px); /* 16px pour toutes les largeurs d'écran */
+  line-height: 1.375; /* facteur multiplicateur de la taille de la police 1.375x16=22 */
+  @media (min-width: 601px) {
+  }
+}
+
+.texte {
+  font-family: $fonteIBM;
+  @include fontSize(16px);
+  line-height: 1.375;
+  &--desktop {
+    line-height: 1.5;
+  }
+}
+
+.titreNiveau1, .titreNiveau2, .titreNiveau3 {
+  font-family: "Fira Sans";
+  font-weight: bold;
+}
+
+.titreNiveau1 {
+  &--desktop {
+    @include fontSize(60px);
+  }
+  &--mobile {
+    @include fontSize(50px);
+  }
+}
+.titreNiveau2 {
+  &--desktop {
+    @include fontSize(35px);
+  }
+  &--mobile {
+    @include fontSize(30px);
+  }
+}
+.titreNiveau3 {
+  &--desktop {
+    @include fontSize(20px);
+  }
+  &--mobile {
+    @include fontSize(20px);
+  }
+}

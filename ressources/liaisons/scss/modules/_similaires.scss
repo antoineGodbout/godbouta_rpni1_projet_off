@@ -1,0 +1,64 @@
+.similaires {
+  background: $bleufonce;
+  color: $jaune;
+  padding: 6%;
+  @media (min-width: 800px) {
+    padding: 2% 0 6% 0;
+  }
+  &__bloc{
+    background: $jaune;
+    border: 2px solid $jaune;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 6%;
+    position: relative;
+    @media (min-width: 800px) {
+      margin-bottom: 0;
+    }
+  }
+  &__lien {
+    text-decoration: none;
+  }
+  &__titre{
+    @include fontSize(30px);
+    font-family: "Fira Sans";
+    text-align: center;
+    font-weight: normal;
+  }
+  &__image{
+    width: 100%;
+  }
+  &__nom{
+    margin: 0;
+    text-align: center;
+    @include fontSize(30px);
+    font-family: "Fira Sans";
+    font-weight: bold;
+    background: $bleufonce;
+    color: $jaune;
+    padding: 2% 0;
+  }
+  &__infos{
+    @include fontSize(16px);
+    color: $bleufonce;
+    font-family: "IBM Plex Serif";
+    text-align: center;
+    margin: 0;
+    padding: 1% 0;
+  }
+  &__bouton{
+    text-align: center;
+    font-family: "IBM Plex Serif";
+    @include fontSize(18px);
+    background: $bleufonce;
+    color: $jaune;
+    border-radius: 16px;
+    margin: 0;
+    padding: 5% 0;
+    border: 2px solid $jaune;
+  }
+  &__lien:hover &__bouton{
+    background: $jaune;
+    border: 2px solid $bleufonce;
+    color: $bleufonce;
+  }
+}

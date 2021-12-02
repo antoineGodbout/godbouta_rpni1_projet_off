@@ -1,0 +1,120 @@
+/**
+* @author Antoine Godbout
+*/
+
+/* Section Infos Artiste */
+.blocArtiste {
+  font-family: "IBM Plex Serif";
+  color: $bleufonce;
+  @include fontSize(16px);
+  padding: 6%;
+  @media (min-width: 800px) {
+    padding: 6% 0 3% 0;
+  }
+  &__titre{
+    @include fontSize(50px);
+    font-family: "Fira Sans";
+    text-align: center;
+    margin: 0 0 5% 0;
+    @media (min-width: 800px) {
+      @include fontSize(60px);
+      text-align: left;
+      margin-bottom: 1%;
+    }
+  }
+  &__image{
+    width: 100%;
+    margin-top: 2%;
+    @media (min-width: 800px) {
+      width: 32%;
+      margin-top: 0;
+    }
+  }
+  &__image:first-of-type{
+    @media (min-width: 800px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  &__categorie {
+    @include fontSize(22px);
+    font-family: "Fira Sans";
+    font-weight: bold;
+    margin: 0;
+  }
+  &__conteneur {
+    @media (min-width: 800px) {
+      flex-wrap: wrap;
+      position: relative;
+    }
+  }
+  &__element {
+    margin-top: 1%;
+  }
+  &__lien {
+    color: $bleufonce;
+    &:hover {
+      color: $jaune;
+    }
+  }
+}
+
+/* Section Représentations */
+.representations {
+  padding: 6%;
+  color: $bleufonce;
+  @media (min-width: 800px) {
+    padding: 0 0 6% 0;
+  }
+  &__titre {
+    font-family: "Fira Sans";
+    @include fontSize(30px);
+    text-align: center;
+    margin: 0 0 10% 0;
+    font-weight: normal;
+    @media (min-width: 800px) {
+      margin-bottom: 4%;
+      text-align: left;
+      @include fontSize(35px)
+    }
+  }
+  &__date {
+    font-family: "Fira Sans";
+    @include fontSize(25px);
+    font-weight: bold;
+    margin: 5% 0 0 0;
+    @media (min-width: 800px) {
+      margin-top: 0;
+    }
+  }
+  &__heure {
+    @include fontSize(25px);
+    font-weight: bolder;
+    margin: 1% 0 0 0;
+  }
+  &__lieu {
+    font-family: "IBM Plex Serif";
+    @include fontSize(20px)
+  }
+  &__image {
+    width: 100%;
+    margin-bottom: 15%;
+    @media (min-width: 800px) {
+      width: 66%;
+      margin-bottom: 0;
+    }
+  }
+  &__bloc {
+    @media (min-width: 800px) {
+      width: 45%;
+      margin-right: 5%;
+    }
+  }
+  &__conteneur {
+    @media (min-width: 800px) {
+      flex-wrap: wrap;
+      justify-content:flex-start;
+    }
+  }
+}

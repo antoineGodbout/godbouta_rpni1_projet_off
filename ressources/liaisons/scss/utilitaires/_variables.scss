@@ -1,0 +1,27 @@
+/**
+* @author Antoine Godbout
+*/
+
+/** Polices de caractères **/
+@font-face {
+  font-family: "Fira Sans", sans-serif;
+  src: 	url('../fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "IBM Plex Serif", serif;
+  src: 	url('../fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf') format('truetype');
+}
+
+$fonteFira : "Fira Sans", sans-serif;
+$fonteIBM : "IBM Plex Serif", sans-serif;
+
+/** Palette de couleurs **/
+
+/* Couleurs de base */
+$bleufonce: #283654;
+$blancBleu: #ecf1fb;
+$jaune: #e0bb6b;
+$neptune: #6b90e0;
+
+/** Points de rupture **/
+$desktop : 601px;

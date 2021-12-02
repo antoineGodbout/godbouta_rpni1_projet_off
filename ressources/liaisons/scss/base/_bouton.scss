@@ -1,0 +1,17 @@
+/**
+* @author Antoine Godbout
+*/
+.bouton {
+  width: 50%;
+  background: $jaune;
+  color: $bleufonce;
+  border-radius: 5px;
+  padding: 2% 0;
+  font-family: "IBM Plex Serif";
+  border: 1px solid $jaune;
+  &--hover {
+    background: $bleufonce;
+    color: $blancBleu;
+    border: 1px solid $blancBleu;
+  }
+}

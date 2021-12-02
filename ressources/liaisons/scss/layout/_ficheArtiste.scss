@@ -1,0 +1,14 @@
+/**
+* @author Antoine Godbout
+*/
+
+.fond {
+  background: $blancBleu;
+  max-width: 100vw;
+}
+
+/** Bloc Artiste **/
+@import '../modules/blocArtiste';
+
+/** Bloc Artistes Similaires **/
+@import '../modules/similaires';

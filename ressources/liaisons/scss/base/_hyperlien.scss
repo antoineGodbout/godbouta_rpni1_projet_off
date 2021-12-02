@@ -1,0 +1,18 @@
+/**
+* @author Antoine Godbout
+*/
+
+.hyperlien {
+  color: $bleufonce;
+  &--visited {
+    color: $neptune;
+  }
+  &--hover {
+    color: $jaune;
+    text-decoration: underline;
+  }
+  &--active {
+    color: $jaune;
+    text-decoration: underline;
+  }
+}

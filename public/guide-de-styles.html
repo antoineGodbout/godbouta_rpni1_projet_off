@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Guide de styles</title>
+  <link rel="stylesheet" href="liaisons/css/styles.css">
+</head>
+<body id="gds" class="gds">
+  <h1 class="gds__titre">Guide de styles</h1>
+
+  <section>
+
+    <h2 class="gds__sousTitre">Couleurs</h2>
+
+    <ul class="palette">
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--bleuFonce"></div>
+        <p class="palette__description"><code>$bleuFonce</code> <br>#283654</p>
+      </li>
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--blancBleu"></div>
+        <p class="palette__description"><code>$blancBleu</code> <br>#ecf1fb</p>
+      </li>
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--jaune"></div>
+        <p class="palette__description"><code>$jaune</code> <br>#e0bb6b</p>
+      </li>
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--bleuNeptune"></div>
+        <p class="palette__description"><code>bleuNeptune</code> <br>#6b90e0</p>
+      </li>
+    </ul>
+    <table class="gds__tableau">
+      <thead>
+      <tr>
+        <th><h2 class="gds__sousTitre">Textes - Desktop</h2></th>
+        <th><h2 class="gds__sousTitre">Textes - Mobile</h2></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          <p class="titreNiveau1 titreNiveau1--desktop">Titre niveau 1</p>
+          <p>
+            <small>Fira Sans, 60pts sur écran large</small>
+          </p>
+        </td>
+        <td>
+          <p class="titreNiveau1 titreNiveau1--mobile">Titre niveau 1</p>
+          <p>
+            <small>Fira Sans, 50 pts sur écran étroit</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="titreNiveau2 titreNiveau2--desktop">Titre niveau 2</p>
+          <p>
+            <small>Fira Sans, 35pts sur écran large</small>
+          </p></td>
+        <td>
+          <p class="titreNiveau2 titreNiveau2--mobile">Titre niveau 2</p>
+          <p>
+            <small>Fira Sans, 30 pts sur écran étroit</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="titreNiveau3 titreNiveau3--desktop">Titre niveau 3</p>
+          <p>
+            <small>Fira Sans, 20pts sur écran large</small>
+          </p>
+        </td>
+        <td>
+          <p class="titreNiveau3 titreNiveau3--mobile">Titre niveau 3</p>
+          <p>
+            <small>Fira Sans, 20 pts sur écran étroit</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="texte texte--desktop">Texte courant lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dolores enim eveniet id inventore laborum modi nam necessitatibus officia, perspiciatis quasi sint soluta, suscipit voluptates? Esse ex harum incidunt.</p>
+          <p><small>(IBM Plex Serif, 16pts avec interlignage de 24 pts)</small></p>
+        </td>
+        <td>
+          <p class="texte texte--mobile">Texte courant lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dolores enim eveniet id inventore laborum modi nam necessitatibus officia, perspiciatis quasi sint soluta, suscipit voluptates? Esse ex harum incidunt.</p>
+          <p><small>(IBM Plex Serif, 16pts avec interlignage de 22 pts)</small></p>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+
+
+    <h2 class="gds__sousTitre">Boutons / Éléments interactifs</h2>
+
+    <h3 class="gds__categorie">Hyperliens de base (pas de classe)</h3>
+
+    <ul class="listeInteractivite">
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien"  href="#">a:link</a></p>
+        <p>Couleur $bleuFonce</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--visited"  href="#">a:visited</a></p>
+        <p>Couleur $bleuNeptune</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--hover"  href="#">a:hover</a></p>
+        <p>Couleur $jaune</p>
+
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--active"  href="#">a:active</a></p>
+        <p>Couleur $jaune</p>
+      </li>
+    </ul>
+
+    <h3 class="gds__categorie">Boutons</h3>
+
+    <ul class="listeInteractivite">
+      <li class="listeInteractivite__item">
+        <p><button href="#" class="bouton">Bouton</button></p>
+        <p>État de base</p>
+        <p>Couleur $jaune avec typo $bleuFonce</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><button href="#" class="bouton bouton--hover">Bouton</button></p>
+        <p>État survol</p>
+        <p>Couleur $bleuFonce avec typo $jaune</p>
+      </li>
+    </ul>
+
+
+  </section>
+</body>
+</html>

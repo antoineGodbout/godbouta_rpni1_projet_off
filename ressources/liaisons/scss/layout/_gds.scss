@@ -1,0 +1,29 @@
+/**
+* @author Yves Hélie - yves.helie@cegep-ste-foy.qc.ca
+* @Antoine Godbout
+*/
+
+/* Autres modules */
+@import "../base/bouton";
+@import "../base/hyperlien";
+@import "../modules/listeInteractivite";
+@import "../modules/palette";
+
+.gds {
+  margin: 5em auto;
+  max-width: 800px;
+  &__titre {
+    @include fontSize(60px);
+    color: black;
+  }
+  &__sousTitre {
+    color: white;
+    background-color: darkgray;
+    @include fontSize(30px);
+    padding: 1rem;
+    text-align: left;
+  }
+  &__categorie {
+    border-bottom: 1px solid lightgray;
+  }
+}

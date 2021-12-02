@@ -1,0 +1,88 @@
+.footer {
+  background: $bleufonce;
+  color: $blancBleu;
+  padding: 6%;
+  text-align: center;
+  border-top: 1px solid $blancBleu;
+  @media (min-width: 800px) {
+    padding: 1% 0 0 0;
+    text-align: left;
+  }
+  &__conteneur {
+    @media (min-width: 800px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__titre {
+    margin: 15% 0 2% 0;
+    @include fontSize(30px);
+    font-weight: normal;
+  }
+  &__texte {
+    @include fontSize(16px);
+    font-family: "IBM Plex Serif";
+    margin: 0;
+  }
+  &__label {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+  }
+  &__lien {
+    color: $jaune;
+    font-family: "IBM Plex Serif";
+    display: block;
+    width: 100%;
+    &:hover {
+      color: $blancBleu;
+    }
+  }
+  &__input {
+    background: $blancBleu;
+    border: none;
+    color: $bleufonce;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 3%;
+    line-height: 35px;
+    padding: 0;
+  }
+  &__bouton {
+    width: 100%;
+    background: $jaune;
+    color: $bleufonce;
+    border-radius: 5px;
+    padding: 2% 0;
+    font-family: "IBM Plex Serif";
+    border: 1px solid $jaune;
+    &:hover {
+      background: $bleufonce;
+      color: $blancBleu;
+      border: 1px solid $blancBleu;
+    }
+    @media (min-width: 800px) {
+      width: 50%;
+      margin-left: 50%;
+    }
+  }
+  &__credits {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  &__form {
+    margin-bottom: 15%;
+    @media (min-width: 800px) {
+      margin-bottom: 5%;
+    }
+  }
+  &__medias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    @media (min-width: 800px) {
+      justify-content: space-around;
+      margin-top: 0;
+    }
+  }
+}

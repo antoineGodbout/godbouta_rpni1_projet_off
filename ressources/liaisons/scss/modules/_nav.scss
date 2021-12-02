@@ -1,0 +1,89 @@
+.navFooter {
+  @include fontSize(21px);
+  @media (min-width: 800px) {
+    text-align: center;
+    @include fontSize(16px);
+  }
+  &__principale {
+    list-style: none;
+    padding: 0;
+    @media (min-width: 800px) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+    &Item {
+      background: $bleufonce;
+      border: 1px solid $blancBleu;
+      @media (min-width: 800px) {
+        width: 25%;
+        border: none;
+        background: transparent;
+      }
+    }
+    &Lien {
+      text-decoration: none;
+      color: $blancBleu;
+      margin: 2% 0;
+      display: block;
+      @media (min-width: 800px) {
+        background: $jaune;
+        color: $bleufonce;
+        margin: 0;
+        padding: 2% 0;
+      }
+    }
+    &Lien:hover {
+      color: $jaune;
+      @media (min-width: 800px) {
+        background: $bleufonce;
+      }
+    }
+  }
+  &__secondaire {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    &Item {
+      background: $blancBleu;
+      padding: 2% 0;
+      border-bottom: 1px solid $bleufonce;
+      @media (min-width: 800px) {
+        border: none;
+      }
+    }
+    &Lien {
+      text-decoration: none;
+      color: $bleufonce;
+    }
+    &Lien:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Style des médias sociaux */
+.fa {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 30px;
+  max-height: 30px;
+}
+.fa-facebook::before, .fa-twitter::before, .fa-youtube::before {
+  font-size: 30px;
+}
+
+/* Couleurs */
+.fa-facebook, .fa-twitter, .fa-youtube {
+  background: $jaune;
+  color: $bleufonce;
+  border: 2px solid $jaune;
+}
+
+/* Hover */
+.fa-facebook:hover, .fa-twitter:hover, .fa-youtube:hover {
+  background: $bleufonce;
+  color: $jaune;
+}
